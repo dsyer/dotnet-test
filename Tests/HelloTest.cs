@@ -1,14 +1,18 @@
-using System;
-using Xunit;
+using NUnit.Framework;
 
-namespace Test
+namespace Unit
 {
-    public class HelloTest
+    public class Tests
     {
-        [Fact]
+        [SetUp]
+        public void Setup()
+        {
+        }
+
+        [Test]
         public void TestAdd()
         {
-            Assert.Equal(3, Hello.Program.Add(1, 2));
-        }
+             Assert.AreEqual(3, Hello.Program.Add(1, 2));
+       }
     }
 }
