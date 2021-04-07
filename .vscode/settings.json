@@ -1,4 +1,0 @@
-{
-    "dotnet-test-explorer.testProjectPath": "*Test.csproj",
-    "dotnet-test-explorer.testArguments": "Test.csproj"
-}
