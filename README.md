@@ -16,7 +16,7 @@ Build and run:
 
 ```
 $ dotnet build Hello.csproj
-$ bin/Debug/net5.0/Hello.ex
+$ bin/Debug/net5.0/Hello
 Hello World!
 ```
 
