@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
+using System.Threading.Tasks;
 
 namespace Unit
 {
@@ -17,10 +18,12 @@ namespace Unit
 		}
 
 		[Test]
-		public void TestCreateScript()
+		public async Task TestCreateScript()
 		{
 			var script = CSharpScript.Create("1 + 2");
 			Assert.AreEqual("1 + 2", script.Code);
+			var state = await script.RunAsync();
+			Assert.AreEqual(3, state.ReturnValue);
 		}
 
 	}
