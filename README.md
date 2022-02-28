@@ -22,7 +22,7 @@ Hello World!
 
 ## Start From Scratch
 
-Install VSCode with the [.NET extenion pack](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscode-dotnet-pack), and the .NET sdk using your OS package manager. Start from an empty directory and create the project:
+Install VSCode with the [.NET extension pack](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscode-dotnet-pack), and the .NET sdk using your OS package manager. Start from an empty directory and create the project:
 
 ```
 $ dotnet new console -o . -n Hello
@@ -53,6 +53,8 @@ and make sure the tests are not included in the production build via `Hello.cspr
   <DefaultItemExcludes>$(DefaultItemExcludes);**\*Test.cs</DefaultItemExcludes>
 </PropertyGroup>
 ```
+
+In VSCode you can run the main console app or the unit tests from the source editor. An occasional `CTRL-P` and `Restart Omnisharp` will help to keep things running smoothly.
 
 ## Postscript
 
