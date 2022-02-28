@@ -5,12 +5,24 @@
             "label": "build",
             "command": "dotnet",
             "type": "process",
+            "group": "build",
             "args": [
                 "build",
                 "${workspaceFolder}/Hello.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/Test.csproj"
+            ],
+            "group": "test",
             "problemMatcher": "$msCompile"
         },
         {

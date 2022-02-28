@@ -16,7 +16,7 @@ Build and run:
 
 ```
 $ dotnet build Hello.csproj
-$ bin/Debug/net5.0/Hello
+$ bin/Debug/net6.0/Hello
 Hello World!
 ```
 
@@ -54,7 +54,7 @@ and make sure the tests are not included in the production build via `Hello.cspr
 </PropertyGroup>
 ```
 
-In VSCode you can run the main console app or the unit tests from the source editor. An occasional `CTRL-P` and `Restart Omnisharp` will help to keep things running smoothly.
+In VSCode you can run the main console app or the unit tests from the source editor. An occasional `CTRL-SHIFT-P` and `Restart Omnisharp` will help to keep things running smoothly.
 
 ## Postscript
 
