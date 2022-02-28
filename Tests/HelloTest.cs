@@ -20,10 +20,10 @@ namespace Unit
 		[Test]
 		public async Task TestCreateScript()
 		{
-			var script = CSharpScript.Create("1 + 2");
-			Assert.AreEqual("1 + 2", script.Code);
+			var script = CSharpScript.Create("System.Console.WriteLine(\"Starting\"); 1 + 2");
 			var state = await script.RunAsync();
 			Assert.AreEqual(3, state.ReturnValue);
+			System.Console.WriteLine("Done");
 		}
 
 	}
